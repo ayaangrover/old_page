@@ -212,10 +212,13 @@ background-color: #151515
   <button class="open-button" onclick="openForm()">login</button>
   
   <div class="form-popup" id="myForm">
-    <form action="/action_page.php" class="form-container">
+    <form action="page.html" class="form-container">
       <input type="text" placeholder="Email" name="email" required>
       <input type="password" placeholder="Password" name="psw" required>
-      <button type="submit" class="btn">login</button>
+      if (<button type="submit" && psw != "")
+      {
+        class="btn">login</button>
+      }
       <button type="button" class="btn cancel" onclick="closeForm()">cancel</button>
     </form>
   </div>
