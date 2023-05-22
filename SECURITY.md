@@ -9,5 +9,3 @@ Here are the supported versions:
 | 5.0.x   | :x:                |
 | 4.0.x   | :x:                |
 | < 4.0   | :x:                |
-
-if anyone steals it then idk tell them to stop
