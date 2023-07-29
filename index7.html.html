@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music</title>
+    <link rel="icon" href = "newicon.png">
+<style>
+body {
+    text-align: center;
+    background-color: transparent;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+frame{
+    padding: 1000px;
+}
+h1{
+    color: white;
+}
+
+h2{
+    color: lightcoral;
+}
+
+h3{
+    color: khaki;
+}
+
+h4{
+    color: khaki;
+    text-emphasis:inherit ;
+    text-decoration: khaki;
+}
+
+a:link, a:visited {
+  background-color: transparent;
+  color: coral;
+  border: 2px solid transparent;
+  padding: 10px;
+  padding-top:5px;
+  padding-bottom: 20px;
+  height: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 0px;;
+  border-radius: 10px;
+}
+
+a:hover, a:active {
+  background-color: coral;
+  color: white;
+}
+
+html{
+    background-color: #151515
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  border-radius: 2mm;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  border-radius: 2mm;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 2mm;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 2mm;
+  max-width: 240px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  border-radius: 2mm;
+  max-width: 240px;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor:auto ;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius: 2mm;
+  max-width: 280px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  border-radius: 2mm;
+  max-width: 280px;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+  border-radius: 2mm;
+}
+</style>
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+<h1>Music</h1>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6aDe5HrxP1TcY4xRv65J7s?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+<button class="open-button" onclick="openForm()">login</button>
+  
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <button type="submit" class="btn">login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">cancel</button>
+  </form>
+</div>
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
+</body>
+</html>
